@@ -1,0 +1,130 @@
+SELECT * FROM PortfolioProject..Cause_of_Death
+
+--Convert to Percent via 2 decimal places
+SELECT CAST((Cardiovascular_diseases) AS DECIMAL(10,2)) AS 'Cardiovascular_diseases%'
+FROM PortfolioProject..Cause_of_Death
+
+--Update Table with new Columns
+ALTER TABLE PortfolioProject..Cause_of_Death
+ADD Cardiovascular_diseases_Percentage INT;
+
+UPDATE PortfolioProject..Cause_of_Death
+SET Cardiovascular_diseases = CAST((Cardiovascular_diseases) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET Neoplasms = CAST((Neoplasms) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET Respiratory_diseases = CAST((Respiratory_diseases) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET [Diabetes_urogenital,_blood,_and_endocrine_diseases_] = CAST(([Diabetes_urogenital,_blood,_and_endocrine_diseases_]) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET Alzheimer = CAST((Alzheimer) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET Lower_respiratory_infections = CAST((Lower_respiratory_infections) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET Neonatal_disorders = CAST((Neonatal_disorders) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET Diarrheal_diseases = CAST((Diarrheal_diseases) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET Road_injuries = CAST((Road_injuries) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET Cirrhosis_and_other_chronic_liver_diseases
+ = CAST((Cirrhosis_and_other_chronic_liver_diseases
+) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET Tuberculosis
+ = CAST((Tuberculosis
+) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET Chronic_kidney_disease
+ = CAST((Chronic_kidney_disease
+) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET Digestive_diseases
+ = CAST((Digestive_diseases
+) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET [HIV/AIDS]
+ = CAST(([HIV/AIDS]
+) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET [Self-harm]
+ = CAST(([Self-harm]
+) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET Malaria
+ = CAST((Malaria
+) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET Interpersonal_violence
+ = CAST((Interpersonal_violence
+) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET Nutritional_deficiencies
+ = CAST((Nutritional_deficiencies
+) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET Meningitis
+ = CAST((Meningitis
+) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET [Protein-energy_malnutrition]
+ = CAST(([Protein-energy_malnutrition]
+) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET Drowning
+ = CAST((Drowning
+) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET Maternal_disorders
+ = CAST((Maternal_disorders
+) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET Parkinson_disease
+ = CAST((Parkinson_disease
+) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET Alcohol_use_disorders
+ = CAST((Alcohol_use_disorders
+) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET Intestinal_infectious_diseases
+ = CAST((Intestinal_infectious_diseases
+) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET Drug_use_disorders
+ = CAST((Drug_use_disorders
+) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET Hepatitis
+ = CAST((Hepatitis
+) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET [Fire,_heat,_and_hot_substances]
+ = CAST(([Fire,_heat,_and_hot_substances]
+) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET Environmental_heat_and_cold_exposure
+ = CAST((Environmental_heat_and_cold_exposure
+) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET Exposure_to_forces_of_nature
+ = CAST((Exposure_to_forces_of_nature
+) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET [Conflict_(percent)]
+ = CAST(([Conflict_(percent)]
+) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET [Terrorism_(percent)]
+ = CAST(([Terrorism_(percent)]
+) AS DECIMAL(10,2))
+UPDATE PortfolioProject..Cause_of_Death
+SET Diabetes_mellitus
+ = CAST((Diabetes_mellitus
+) AS DECIMAL(10,2))
+--Clean Table
+ALTER TABLE PortfolioProject..Cause_of_Death
+DROP COLUMN Cardiovascular_diseases_Percentage
+--Select all to see new table
+SELECT * FROM PortfolioProject..Cause_of_Death
+--Time to do data analysis
